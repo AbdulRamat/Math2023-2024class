@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.new-post-container{
+   margin-bottom: 20px;
+    padding: 15px;
+ border: 1px solid #ddd;
+  border-radius: 8px;
+  }
+.new-post-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+  .new-post-container input, .new-post-container select{
+  margin-bottom: 10px;
+  padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   width: 95%;
+}
+  .new-post-container input[type="file"]{
+    padding: 5px;
+}
+.new-post-container #editor{
+  min-height: 200px;
+  margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.new-post-container button {
+  padding: 10px 15px;
+   background-color: #5cb85c;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+    border-radius: 8px;
+  display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.filter-container h2{
+ margin-right: 10px;
+}
+  .filter-container select, .filter-container input{
+ padding: 10px;
+     border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.post {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.post h3 {
+    margin-bottom: 5px;
+}
+ .post span {
+  font-weight: bold;
+    margin-right: 5px;
+  }
+.post .post-content {
+    margin-bottom: 10px;
+}
+
+.post .post-footer {
+  display: flex;
+  gap: 10px;
+   font-size: 0.8em;
+    color: #666;
+}
+
+.post .post-footer span{
+ font-weight: normal;
+}
+.post .post-footer button {
+   background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #555;
+}
+.post .post-footer button:hover{
+  color: #000;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    .filter-container{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+
